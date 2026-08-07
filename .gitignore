@@ -1,0 +1,3 @@
+# gstack-artifacts sync: ignore-everything base. Paths are included explicitly via
+# .brain-allowlist and `git add -f` from gstack-brain-sync. Do not edit.
+*

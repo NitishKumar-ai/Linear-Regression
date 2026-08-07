@@ -1,0 +1,18 @@
+[
+  {"pattern": "projects/*/learnings.jsonl", "class": "artifact"},
+  {"pattern": "projects/*/*-reviews.jsonl", "class": "artifact"},
+  {"pattern": "projects/*/ceo-plans/*.md", "class": "artifact"},
+  {"pattern": "projects/*/ceo-plans/*/*.md", "class": "artifact"},
+  {"pattern": "projects/*/designs/*.md", "class": "artifact"},
+  {"pattern": "projects/*/designs/*/*.md", "class": "artifact"},
+  {"pattern": "projects/*/*-design-*.md", "class": "artifact"},
+  {"pattern": "projects/*/*-test-plan-*.md", "class": "artifact"},
+  {"pattern": "projects/*/*-eng-review-test-plan-*.md", "class": "artifact"},
+  {"pattern": "retros/*.md", "class": "artifact"},
+  {"pattern": "builder-journey.md", "class": "artifact"},
+  {"pattern": "projects/*/timeline.jsonl", "class": "behavioral"},
+  {"pattern": "developer-profile.json", "class": "behavioral"},
+  {"pattern": "builder-profile.jsonl", "class": "behavioral"},
+  {"pattern": "transcripts/run-*/*.md", "class": "behavioral"},
+  {"pattern": "transcripts/run-*/**/*.md", "class": "behavioral"}
+]

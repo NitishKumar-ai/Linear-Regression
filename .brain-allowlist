@@ -1,0 +1,37 @@
+# Canonical allowlist of paths that gstack-brain-sync will publish.
+# One glob per line. Anything not matching stays local.
+# Do not edit directly; managed by gstack-artifacts-init. User additions go
+# below the marker and survive re-init.
+projects/*/learnings.jsonl
+projects/*/*-reviews.jsonl
+projects/*/ceo-plans/*.md
+projects/*/ceo-plans/*/*.md
+projects/*/designs/*.md
+projects/*/designs/*/*.md
+# Project-root design / test-plan artifacts written by /office-hours,
+# /plan-eng-review, and /autoplan. The skills emit
+# `{user}-{branch}-design-{datetime}.md`,
+# `{user}-{branch}-test-plan-{datetime}.md`, and
+# `{user}-{branch}-eng-review-test-plan-{datetime}.md` at the project
+# root (not under designs/), so the existing `designs/*.md` patterns
+# miss them. Without these the cross-machine pull on machine B gets
+# the referencing CEO plan but not the underlying design / test plan
+# (#1452).
+projects/*/*-design-*.md
+projects/*/*-test-plan-*.md
+projects/*/*-eng-review-test-plan-*.md
+projects/*/timeline.jsonl
+retros/*.md
+developer-profile.json
+builder-journey.md
+builder-profile.jsonl
+# Transcripts staged in remote-http MCP mode (per plan D11 split-engine).
+# gstack-memory-ingest persists per-run dirs here when local gbrain import
+# is skipped; brain admin pulls + indexes into the remote brain.
+transcripts/run-*/*.md
+transcripts/run-*/**/*.md
+# NOT synced (machine-local UX state):
+#   projects/*/question-preferences.json (per-machine UX preferences)
+#   projects/*/question-log.jsonl (audit/derivation log stays with preferences)
+#   projects/*/question-events.jsonl (same)
+# ---- USER ADDITIONS BELOW ---- (survives re-init; above is managed)
