@@ -1,0 +1,5 @@
+{"skill":"plan-ceo-review","timestamp":"2026-07-22T19:52:21Z","status":"clean","unresolved":0,"critical_gaps":0,"mode":"HOLD","scope_proposed":8,"scope_accepted":8,"scope_deferred":2,"commit":"7bfbf24","via":"autoplan"}
+{"skill":"plan-design-review","timestamp":"2026-07-22T19:52:21Z","status":"clean","initial_score":6,"overall_score":9,"unresolved":0,"decisions_made":8,"commit":"7bfbf24","via":"autoplan"}
+{"skill":"plan-eng-review","timestamp":"2026-07-22T19:52:21Z","status":"clean","unresolved":0,"critical_gaps":0,"issues_found":15,"mode":"HARDEN","commit":"7bfbf24","via":"autoplan"}
+{"skill":"plan-devex-review","timestamp":"2026-07-22T19:52:21Z","status":"clean","initial_score":4,"overall_score":8,"product_type":"self-hosted API/platform","tthw_current":">10 min uncertain cold","tthw_target":"<5 min warm","mode":"POLISH","persona":"self-hosted backend/platform operator","competitive_tier":"Competitive","unresolved":0,"commit":"7bfbf24","via":"autoplan"}
+{"skill":"autoplan-voices","timestamp":"2026-07-22T19:52:21Z","status":"issues_resolved","source":"subagents","phases":["ceo","eng","dx"],"commit":"7bfbf24"}

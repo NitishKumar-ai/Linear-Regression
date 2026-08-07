@@ -1,0 +1,8 @@
+{"skill":"office-hours","event":"started","branch":"unknown","session":"5297-1786096309","ts":"2026-08-07T09:51:50.035Z"}
+{"skill":"office-hours","event":"completed","branch":"unknown","outcome":"success","duration_s":"600","session":"12345","ts":"2026-08-07T10:42:11.460Z"}
+{"skill":"plan-ceo-review","event":"started","branch":"unknown","session":"8410-1786099382","ts":"2026-08-07T10:43:02.735Z"}
+{"skill":"plan-eng-review","event":"started","branch":"unknown","session":"9174-1786099821","ts":"2026-08-07T10:50:21.683Z"}
+{"skill":"plan-eng-review","event":"completed","branch":"main","outcome":"success","duration_s":"1200","session":"14876","ts":"2026-08-07T12:03:11.949Z"}
+{"skill":"autoplan","event":"started","branch":"main","session":"15012-1786104254","ts":"2026-08-07T12:04:15.201Z"}
+{"skill":"ship","event":"started","branch":"main","session":"20533-1786108699","ts":"2026-08-07T13:18:20.005Z"}
+{"skill":"qa","event":"completed","branch":"feat/plugin-phase-1-session-capture","outcome":"success","ts":"2026-08-07T17:10:36.756Z"}

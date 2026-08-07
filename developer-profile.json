@@ -1,0 +1,530 @@
+{
+  "identity": {},
+  "declared": {},
+  "inferred": {
+    "values": {
+      "scope_appetite": 0.5,
+      "risk_tolerance": 0.5,
+      "detail_preference": 0.5,
+      "autonomy": 0.5,
+      "architecture_care": 0.5
+    },
+    "sample_size": 8,
+    "diversity": {
+      "skills_covered": 1,
+      "question_ids_covered": 8,
+      "days_span": 4
+    }
+  },
+  "gap": {},
+  "overrides": {},
+  "sessions": [
+    {
+      "date": "2026-05-30T18:41:58Z",
+      "mode": "builder",
+      "project_slug": "garrytan-gstack",
+      "signal_count": 5,
+      "signals": [
+        "real_problem",
+        "domain_expertise",
+        "taste",
+        "agency",
+        "conviction"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/garrytan-gstack/nitish-main-design-20260530-184158.md",
+      "assignment": "Set up the Firecracker/gVisor sandbox environment and run a manual pilot exploit verification for CWE-89 on a test repo.",
+      "resources_shown": [],
+      "topics": [
+        "security",
+        "sandbox",
+        "llm-agents"
+      ],
+      "ts": "2026-05-30T13:23:45.385Z"
+    },
+    {
+      "date": "2026-05-30T16:16:40Z",
+      "mode": "resources",
+      "project_slug": "garrytan-gstack",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=rWUWfj_PqmM",
+        "https://www.youtube.com/watch?v=ASABxNenD_U",
+        "https://www.youtube.com/watch?v=IACHfKmZMr8"
+      ],
+      "topics": [],
+      "ts": "2026-05-30T16:16:40.542Z"
+    },
+    {
+      "date": "2026-05-31T11:29:26Z",
+      "mode": "startup",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 1,
+      "signals": [
+        "agency"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/NitishKumar-ai-Class-mode/friday-main-design-20260531-112926.md",
+      "assignment": "Go to one coaching center in your city. Show the owner your phone. Ask: I can build something that generates 20 exam questions from any PDF in 30 seconds. Is that useful? Then ask: What would you pay for that?",
+      "resources_shown": [],
+      "topics": [
+        "edtech",
+        "india",
+        "test-generation",
+        "AI"
+      ],
+      "ts": "2026-05-31T06:05:34.286Z"
+    },
+    {
+      "date": "2026-05-31T11:35:00Z",
+      "mode": "resources",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=z1iF1c8w5Lg",
+        "https://paulgraham.com/before.html",
+        "https://www.youtube.com/watch?v=TwDJhUJL-5o"
+      ],
+      "topics": [],
+      "ts": "2026-05-31T06:07:28.938Z"
+    },
+    {
+      "date": "2026-05-31T22:30:50Z",
+      "mode": "resources",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=ksGNfd-wQY4",
+        "https://www.youtube.com/watch?v=Hm-ZIiwiN1o",
+        "https://paulgraham.com/schlep.html"
+      ],
+      "topics": [],
+      "ts": "2026-05-31T22:30:50.448Z"
+    },
+    {
+      "date": "2026-06-01T18:36:20Z",
+      "mode": "resources",
+      "project_slug": "Agent_mesh",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=Y4yMc99fpfY",
+        "https://paulgraham.com/greatwork.html",
+        "https://www.youtube.com/watch?v=CKvo_kQbakU"
+      ],
+      "topics": [],
+      "ts": "2026-06-01T18:36:20.584Z"
+    },
+    {
+      "date": "2026-06-02T20:23:37Z",
+      "mode": "startup",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 3,
+      "signals": [
+        "domain_expertise",
+        "taste",
+        "agency"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/NitishKumar-ai-Class-mode/friday-main-design-20260602-202337.md",
+      "assignment": "Find 3 specific developers building production AI agents frustrated with orchestration. DM or email: How are you handling retries and crash recovery? What breaks most often?",
+      "resources_shown": [],
+      "topics": [
+        "agent-orchestration",
+        "durable-execution",
+        "security",
+        "commitguard"
+      ],
+      "ts": "2026-06-02T14:54:51.103Z"
+    },
+    {
+      "date": "2026-06-02T15:02:08Z",
+      "mode": "resources",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=Nsx5RDVKZSk",
+        "https://www.youtube.com/watch?v=CcnwFJqEnxU",
+        "https://paulgraham.com/relres.html"
+      ],
+      "topics": [],
+      "ts": "2026-06-02T15:02:08.578Z"
+    },
+    {
+      "date": "2026-06-03T08:55:00Z",
+      "mode": "startup",
+      "project_slug": "Agent_mesh",
+      "signal_count": 5,
+      "signals": [
+        "real_problem",
+        "domain_expertise",
+        "taste",
+        "agency",
+        "solves_problem_others_need"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/Agent_mesh/friday-main-design-20260603-085450.md",
+      "assignment": "Find one person who will pay $50 for either arm before writing a file",
+      "resources_shown": [],
+      "topics": [
+        "ai-agents",
+        "security",
+        "marketing-automation"
+      ],
+      "ts": "2026-06-03T03:32:16.557Z"
+    },
+    {
+      "date": "2026-06-03T08:02:40Z",
+      "mode": "builder",
+      "project_slug": "Agent_mesh",
+      "signal_count": 5,
+      "signals": [
+        "real_problem",
+        "other_people_need_it",
+        "domain_expertise",
+        "taste",
+        "agency"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/Agent_mesh/main-design-20260603-133200.md",
+      "assignment": "Manually execute the flow to ensure it is possible in 3 minutes. Run Semgrep locally on a known vulnerable repo, copy the finding to Sonnet 4.6, ask it to write an exploit, and run that exploit manually against a local clone.",
+      "resources_shown": [],
+      "topics": [
+        "agent_mesh",
+        "security_scanning",
+        "hackathon"
+      ],
+      "ts": "2026-06-03T08:02:40.406Z"
+    },
+    {
+      "date": "2026-06-19T07:27:42Z",
+      "mode": "builder",
+      "project_slug": "Agent_mesh",
+      "signal_count": 3,
+      "signals": [
+        "real_problem",
+        "taste",
+        "agency"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/Agent_mesh/friday-phase-7-temp-2-design-20260619-125559.md",
+      "assignment": "Capture one real server-lite agent run as request, response, SSE, workflow, and task contract fixtures.",
+      "resources_shown": [],
+      "topics": [
+        "frontend-consolidation",
+        "server-lite-contracts",
+        "conductor-integration"
+      ],
+      "ts": "2026-06-19T07:27:42.497Z"
+    },
+    {
+      "date": "2026-06-19T07:33:13Z",
+      "mode": "resources",
+      "project_slug": "Agent_mesh",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=Nsx5RDVKZSk",
+        "https://paulgraham.com/schlep.html"
+      ],
+      "topics": [],
+      "ts": "2026-06-19T07:33:13.349Z"
+    },
+    {
+      "date": "2026-06-27T13:07:00Z",
+      "mode": "startup",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 5,
+      "signals": [
+        "real_problem",
+        "solves_problem_others_need",
+        "domain_expertise",
+        "taste",
+        "agency"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/NitishKumar-ai-Class-mode/friday-feat-learn-hub-design-20260627-130000.md",
+      "assignment": "Draft the background grading classification prompt for Gemini 2.0 Flash in server/lib/prompts/grader.ts and verify its accuracy against a test dataset of 20 sample student responses.",
+      "resources_shown": [],
+      "topics": [
+        "edtech",
+        "ai-agents",
+        "spaced-repetition"
+      ],
+      "ts": "2026-06-27T13:07:20.465Z"
+    },
+    {
+      "date": "2026-06-27T13:07:33Z",
+      "mode": "resources",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=Th8JoIan4dg",
+        "https://paulgraham.com/startupideas.html",
+        "https://www.youtube.com/watch?v=QKPgBAnbc10"
+      ],
+      "topics": [],
+      "ts": "2026-06-27T13:07:33.732Z"
+    },
+    {
+      "date": "2026-07-02T20:50:16Z",
+      "mode": "startup",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 3,
+      "signals": [
+        "agency",
+        "real_problem",
+        "solves_problem_others_need"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/NitishKumar-ai-Class-mode/friday-fix-qa-school-blockers-design-20260703-022016.md",
+      "assignment": "By end of next week, get a named principal at one real school to commit to a 30-minute session where you watch a teacher take attendance in Class-mode",
+      "resources_shown": [],
+      "topics": [
+        "school-saas-activation",
+        "pilot-validation",
+        "attendance-wedge"
+      ],
+      "ts": "2026-07-02T20:50:16.716Z"
+    },
+    {
+      "date": "2026-07-02T21:09:27Z",
+      "mode": "resources",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=3N3TnaViyjk",
+        "https://www.youtube.com/watch?v=rP7bpYsfa6Q",
+        "https://paulgraham.com/superlinear.html"
+      ],
+      "topics": [],
+      "ts": "2026-07-02T21:09:27.578Z"
+    },
+    {
+      "date": "2026-07-03T18:09:01Z",
+      "mode": "startup",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 3,
+      "signals": [
+        "agency",
+        "taste",
+        "solves_real_problem"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/NitishKumar-ai-Class-mode/friday-main-design-20260703-233732.md",
+      "assignment": "Start Meta WABA verification + submit Utility absence-alert template by 2026-07-07; name one principal and run one concierge alert from personal WhatsApp",
+      "resources_shown": [],
+      "topics": [
+        "whatsapp-templates",
+        "absence-alert-wedge",
+        "pilot-validation"
+      ],
+      "ts": "2026-07-03T18:09:02.056Z"
+    },
+    {
+      "date": "2026-07-14T06:51:36Z",
+      "mode": "builder",
+      "project_slug": "NitishKumar-ai-video-search-mvp",
+      "signal_count": 5,
+      "signals": [
+        "real_problem",
+        "named_users",
+        "need",
+        "domain_expertise",
+        "taste"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/NitishKumar-ai-video-search-mvp/friday-main-design-20260714-122136.md",
+      "assignment": "Run /plan-eng-review to lock down the CLIP frame indexing schema and FFmpeg cut script before coding.",
+      "resources_shown": [],
+      "topics": [
+        "video-search",
+        "CLIP-embeddings",
+        "FFmpeg-cutting"
+      ],
+      "ts": "2026-07-14T06:51:36.697Z"
+    },
+    {
+      "date": "2026-07-14T06:52:16Z",
+      "mode": "builder",
+      "project_slug": "NitishKumar-ai-video-search-mvp",
+      "signal_count": 5,
+      "signals": [
+        "real_problem",
+        "named_users",
+        "need",
+        "domain_expertise",
+        "taste"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/NitishKumar-ai-video-search-mvp/friday-main-design-20260714-122136.md",
+      "assignment": "Run /plan-eng-review to lock down the multi-modal schema (Postgres + Qdrant) and Celery segment cache before coding.",
+      "resources_shown": [],
+      "topics": [
+        "video-search",
+        "multi-modal-indexing",
+        "segment-caching"
+      ],
+      "ts": "2026-07-14T06:52:16.313Z"
+    },
+    {
+      "date": "2026-07-14T06:55:00Z",
+      "mode": "resources",
+      "project_slug": "NitishKumar-ai-video-search-mvp",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=dtnG0ELjvcM",
+        "https://paulgraham.com/genius.html",
+        "https://www.youtube.com/watch?v=K4s6Cgicw_A"
+      ],
+      "topics": [],
+      "ts": "2026-07-14T06:55:00.389Z"
+    },
+    {
+      "date": "2026-07-14T19:13:39Z",
+      "mode": "startup",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 4,
+      "signals": [
+        "pushback",
+        "domain_expertise",
+        "agency",
+        "real_problem"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/NitishKumar-ai-Class-mode/friday-main-design-20260715-004339.md",
+      "assignment": "Ask the pilot principal the willingness-to-pay question this week and record the exact answer",
+      "resources_shown": [],
+      "topics": [
+        "ai-education-org",
+        "platform-dependency",
+        "school-system-of-record"
+      ],
+      "ts": "2026-07-14T19:13:39.793Z"
+    },
+    {
+      "date": "2026-07-14T19:31:13Z",
+      "mode": "resources",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=xXCBz_8hM9w",
+        "https://www.youtube.com/watch?v=ShYKkPPhOoc"
+      ],
+      "topics": [],
+      "ts": "2026-07-14T19:31:13.908Z"
+    },
+    {
+      "date": "2026-08-07T10:40:47Z",
+      "mode": "resources",
+      "project_slug": "Gems",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=BUE-icVYRFU",
+        "https://www.youtube.com/watch?v=Fk9BCr5pLTU",
+        "https://paulgraham.com/notnot.html"
+      ],
+      "topics": [],
+      "ts": "2026-08-07T10:40:48.049Z"
+    }
+  ],
+  "signals_accumulated": {
+    "real_problem": 9,
+    "domain_expertise": 8,
+    "taste": 9,
+    "agency": 10,
+    "conviction": 1,
+    "solves_problem_others_need": 3,
+    "other_people_need_it": 1,
+    "solves_real_problem": 1,
+    "named_users": 2,
+    "need": 2,
+    "pushback": 1
+  },
+  "schema_version": 1,
+  "resources_shown": [
+    "https://www.youtube.com/watch?v=rWUWfj_PqmM",
+    "https://www.youtube.com/watch?v=ASABxNenD_U",
+    "https://www.youtube.com/watch?v=IACHfKmZMr8",
+    "https://www.youtube.com/watch?v=z1iF1c8w5Lg",
+    "https://paulgraham.com/before.html",
+    "https://www.youtube.com/watch?v=TwDJhUJL-5o",
+    "https://www.youtube.com/watch?v=ksGNfd-wQY4",
+    "https://www.youtube.com/watch?v=Hm-ZIiwiN1o",
+    "https://paulgraham.com/schlep.html",
+    "https://www.youtube.com/watch?v=Y4yMc99fpfY",
+    "https://paulgraham.com/greatwork.html",
+    "https://www.youtube.com/watch?v=CKvo_kQbakU",
+    "https://www.youtube.com/watch?v=Nsx5RDVKZSk",
+    "https://www.youtube.com/watch?v=CcnwFJqEnxU",
+    "https://paulgraham.com/relres.html",
+    "https://www.youtube.com/watch?v=Th8JoIan4dg",
+    "https://paulgraham.com/startupideas.html",
+    "https://www.youtube.com/watch?v=QKPgBAnbc10",
+    "https://www.youtube.com/watch?v=3N3TnaViyjk",
+    "https://www.youtube.com/watch?v=rP7bpYsfa6Q",
+    "https://paulgraham.com/superlinear.html",
+    "https://www.youtube.com/watch?v=dtnG0ELjvcM",
+    "https://paulgraham.com/genius.html",
+    "https://www.youtube.com/watch?v=K4s6Cgicw_A",
+    "https://www.youtube.com/watch?v=xXCBz_8hM9w",
+    "https://www.youtube.com/watch?v=ShYKkPPhOoc",
+    "https://www.youtube.com/watch?v=BUE-icVYRFU",
+    "https://www.youtube.com/watch?v=Fk9BCr5pLTU",
+    "https://paulgraham.com/notnot.html"
+  ],
+  "topics": [
+    "security",
+    "sandbox",
+    "llm-agents",
+    "edtech",
+    "india",
+    "test-generation",
+    "AI",
+    "agent-orchestration",
+    "durable-execution",
+    "commitguard",
+    "ai-agents",
+    "marketing-automation",
+    "agent_mesh",
+    "security_scanning",
+    "hackathon",
+    "frontend-consolidation",
+    "server-lite-contracts",
+    "conductor-integration",
+    "spaced-repetition",
+    "school-saas-activation",
+    "pilot-validation",
+    "attendance-wedge",
+    "whatsapp-templates",
+    "absence-alert-wedge",
+    "video-search",
+    "CLIP-embeddings",
+    "FFmpeg-cutting",
+    "multi-modal-indexing",
+    "segment-caching",
+    "ai-education-org",
+    "platform-dependency",
+    "school-system-of-record"
+  ],
+  "derived_at": "2026-08-05T18:48:50.492Z"
+}

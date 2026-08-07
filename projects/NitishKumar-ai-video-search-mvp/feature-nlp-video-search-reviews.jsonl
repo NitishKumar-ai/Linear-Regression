@@ -1,0 +1,4 @@
+{"skill":"ship","timestamp":"2026-07-14T10:57:25Z","coverage_pct":85,"plan_items_total":42,"plan_items_done":33,"verification_result":"pass","version":"pending","branch":"feature/nlp-video-search"}
+{"skill":"ship","timestamp":"2026-07-14T11:02:43Z","coverage_pct":85,"plan_items_total":42,"plan_items_done":33,"verification_result":"pass","version":"0.3.0.0","branch":"feature/nlp-video-search"}
+{"skill":"qa","timestamp":"2026-07-14T11:18:12Z","bugs_found":1,"bugs_fixed":1,"severity":"critical","branch":"feature/nlp-video-search"}
+{"skill":"ship","timestamp":"2026-07-14T16:20:11Z","coverage_pct":85,"plan_items_total":18,"plan_items_done":16,"verification_result":"skipped","version":"0.3.0.0","branch":"feature/nlp-video-search"}
