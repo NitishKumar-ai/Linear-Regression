@@ -26,3 +26,5 @@
 {"skill":"autoplan-voices","timestamp":"2026-07-20T19:36:31Z","status":"issues_open","source":"subagent-only","phase":"ceo","via":"autoplan","consensus_confirmed":5,"consensus_disagree":1,"commit":"a6c0ab9"}
 {"skill":"canary","timestamp":"2026-08-11T13:17:27Z","status":"HEALTHY","url":"https://classmode.inmodel.in","duration_min":10,"alerts":0,"pages":4,"checks":40,"commit":"8dc30da"}
 {"skill":"canary","timestamp":"2026-08-11T13:17:27Z","status":"clean","url":"https://classmode.inmodel.in","alerts":0,"commit":"8dc30da"}
+{"skill":"land-and-deploy","timestamp":"2026-08-11T15:15:32Z","status":"SUCCESS","pr":407,"merge_sha":"47f32fde757b990143b0a92ba73633b90656774c","merge_path":"direct","first_run":false,"deploy_status":"HEALTHY","staging_status":"SKIPPED","review_status":"CURRENT","deploy_s":259,"canary_s":60,"total_s":2102}
+{"skill":"canary","timestamp":"2026-08-11T15:15:32Z","status":"clean","url":"https://classmode.inmodel.in","alerts":0,"commit":"47f32fd"}
