@@ -86,3 +86,6 @@
 {"skill":"ship","event":"started","branch":"cursor/study-arena-adaptive","session":"28539-1786040606","ts":"2026-08-06T18:23:26.110Z"}
 {"skill":"ship","event":"completed","branch":"cursor/study-arena-adaptive","outcome":"success","duration_s":"1566","session":"28539-1786040606","ts":"2026-08-06T18:49:32.296Z"}
 {"skill":"autoplan","event":"started","branch":"cursor/study-arena-adaptive","session":"15090-1786448618","ts":"2026-08-11T11:43:38.794Z"}
+{"skill":"autoplan","event":"completed","branch":"cursor/study-arena-adaptive","outcome":"success","duration_s":"2113","session":"15090-1786448618","ts":"2026-08-11T12:18:51.676Z"}
+{"skill":"ship","event":"started","branch":"cursor/study-arena-adaptive","session":"22466-1786450830","ts":"2026-08-11T12:20:30.685Z"}
+{"skill":"ship","event":"completed","branch":"cursor/study-arena-adaptive","outcome":"success","duration_s":"934","session":"22466-1786450830","ts":"2026-08-11T12:36:04.861Z"}
