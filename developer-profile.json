@@ -9,11 +9,11 @@
       "autonomy": 0.5,
       "architecture_care": 0.5
     },
-    "sample_size": 8,
+    "sample_size": 72,
     "diversity": {
-      "skills_covered": 1,
-      "question_ids_covered": 8,
-      "days_span": 4
+      "skills_covered": 2,
+      "question_ids_covered": 72,
+      "days_span": 6
     }
   },
   "gap": {},
@@ -526,5 +526,5 @@
     "platform-dependency",
     "school-system-of-record"
   ],
-  "derived_at": "2026-08-05T18:48:50.492Z"
+  "derived_at": "2026-08-11T12:16:38.742Z"
 }

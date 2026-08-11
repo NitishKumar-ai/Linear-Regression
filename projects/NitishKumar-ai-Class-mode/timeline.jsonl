@@ -85,3 +85,4 @@
 {"skill":"qa","event":"completed","branch":"cursor/study-arena-adaptive","outcome":"success","duration_s":"1747","session":"23225-1786037953","ts":"2026-08-06T18:08:21.008Z"}
 {"skill":"ship","event":"started","branch":"cursor/study-arena-adaptive","session":"28539-1786040606","ts":"2026-08-06T18:23:26.110Z"}
 {"skill":"ship","event":"completed","branch":"cursor/study-arena-adaptive","outcome":"success","duration_s":"1566","session":"28539-1786040606","ts":"2026-08-06T18:49:32.296Z"}
+{"skill":"autoplan","event":"started","branch":"cursor/study-arena-adaptive","session":"15090-1786448618","ts":"2026-08-11T11:43:38.794Z"}
