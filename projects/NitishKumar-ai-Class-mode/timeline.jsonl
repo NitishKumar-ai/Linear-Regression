@@ -95,3 +95,5 @@
 {"skill":"canary","event":"completed","branch":"main","outcome":"success","duration_s":"780","session":"canary-1786453421","ts":"2026-08-11T13:17:27.204Z"}
 {"skill":"qa","event":"started","branch":"main","session":"31113-1786454329","ts":"2026-08-11T13:18:49.072Z"}
 {"skill":"qa","event":"completed","branch":"qa/quest-panel-blocks-register","outcome":"success","duration_s":"2400","session":"qa-1786454328","ts":"2026-08-11T14:24:09.008Z"}
+{"skill":"ship","event":"started","branch":"qa/quest-panel-blocks-register","session":"35881-1786458388","ts":"2026-08-11T14:26:28.358Z"}
+{"skill":"ship","event":"completed","branch":"qa/quest-panel-blocks-register","outcome":"success","duration_s":"525","session":"ship-1786458388","ts":"2026-08-11T14:35:13.246Z"}
