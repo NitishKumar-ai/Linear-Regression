@@ -28,3 +28,5 @@
 {"skill":"canary","timestamp":"2026-08-11T13:17:27Z","status":"clean","url":"https://classmode.inmodel.in","alerts":0,"commit":"8dc30da"}
 {"skill":"land-and-deploy","timestamp":"2026-08-11T15:15:32Z","status":"SUCCESS","pr":407,"merge_sha":"47f32fde757b990143b0a92ba73633b90656774c","merge_path":"direct","first_run":false,"deploy_status":"HEALTHY","staging_status":"SKIPPED","review_status":"CURRENT","deploy_s":259,"canary_s":60,"total_s":2102}
 {"skill":"canary","timestamp":"2026-08-11T15:15:32Z","status":"clean","url":"https://classmode.inmodel.in","alerts":0,"commit":"47f32fd"}
+{"skill":"codex-plan-review","timestamp":"2026-08-12T18:21:44Z","status":"issues_found","source":"codex","commit":"47f32fd"}
+{"skill":"plan-eng-review","timestamp":"2026-08-12T18:21:44Z","status":"issues_open","unresolved":0,"critical_gaps":2,"issues_found":8,"mode":"FULL_REVIEW","commit":"47f32fd"}

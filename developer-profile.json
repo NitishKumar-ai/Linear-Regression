@@ -9,11 +9,11 @@
       "autonomy": 0.5,
       "architecture_care": 0.5
     },
-    "sample_size": 72,
+    "sample_size": 110,
     "diversity": {
       "skills_covered": 2,
-      "question_ids_covered": 72,
-      "days_span": 6
+      "question_ids_covered": 110,
+      "days_span": 10
     }
   },
   "gap": {},
@@ -445,20 +445,95 @@
       ],
       "topics": [],
       "ts": "2026-08-07T10:40:48.049Z"
+    },
+    {
+      "date": "2026-08-11T17:36:03Z",
+      "mode": "resources",
+      "project_slug": "friday",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=HB3l1BPi7zo",
+        "https://paulgraham.com/love.html",
+        "https://www.youtube.com/watch?v=chAoH_AeGAg"
+      ],
+      "topics": [],
+      "ts": "2026-08-11T17:36:03.137Z"
+    },
+    {
+      "date": "2026-08-12T17:54:35Z",
+      "mode": "startup",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 5,
+      "signals": [
+        "real_problem",
+        "solves_others_problem",
+        "domain_expertise",
+        "taste",
+        "agency"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/NitishKumar-ai-Class-mode/friday-main-design-20260812-232435.md",
+      "assignment": "Run metrics:weekly and read the actual per-teacher-per-day marking numbers before the Aug 14 conversation",
+      "resources_shown": [],
+      "topics": [
+        "attendance-wedge",
+        "adoption-instrumentation",
+        "offline-first"
+      ],
+      "ts": "2026-08-12T17:54:35.687Z"
+    },
+    {
+      "date": "2026-08-12T18:03:26Z",
+      "mode": "resources",
+      "project_slug": "NitishKumar-ai-Class-mode",
+      "signal_count": 0,
+      "signals": [],
+      "design_doc": "",
+      "assignment": "",
+      "resources_shown": [
+        "https://www.youtube.com/watch?v=TANaRNMbYgk",
+        "https://paulgraham.com/boss.html"
+      ],
+      "topics": [],
+      "ts": "2026-08-12T18:03:26.350Z"
+    },
+    {
+      "date": "2026-08-14T02:32:00+05:30",
+      "mode": "startup",
+      "project_slug": "agents-automation",
+      "signal_count": 4,
+      "signals": [
+        "real_problem",
+        "domain_expertise",
+        "taste",
+        "agency"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/agents-automation/friday-unknown-design-20260814-022558.md",
+      "assignment": "Provide one real /panel plan feature and define successful contributions from all five agents",
+      "resources_shown": [],
+      "topics": [
+        "multi-agent collaboration",
+        "discord",
+        "notion"
+      ],
+      "ts": "2026-08-13T21:00:34.195Z"
     }
   ],
   "signals_accumulated": {
-    "real_problem": 9,
-    "domain_expertise": 8,
-    "taste": 9,
-    "agency": 10,
+    "real_problem": 11,
+    "domain_expertise": 10,
+    "taste": 11,
+    "agency": 12,
     "conviction": 1,
     "solves_problem_others_need": 3,
     "other_people_need_it": 1,
     "solves_real_problem": 1,
     "named_users": 2,
     "need": 2,
-    "pushback": 1
+    "pushback": 1,
+    "solves_others_problem": 1
   },
   "schema_version": 1,
   "resources_shown": [
@@ -490,7 +565,12 @@
     "https://www.youtube.com/watch?v=ShYKkPPhOoc",
     "https://www.youtube.com/watch?v=BUE-icVYRFU",
     "https://www.youtube.com/watch?v=Fk9BCr5pLTU",
-    "https://paulgraham.com/notnot.html"
+    "https://paulgraham.com/notnot.html",
+    "https://www.youtube.com/watch?v=HB3l1BPi7zo",
+    "https://paulgraham.com/love.html",
+    "https://www.youtube.com/watch?v=chAoH_AeGAg",
+    "https://www.youtube.com/watch?v=TANaRNMbYgk",
+    "https://paulgraham.com/boss.html"
   ],
   "topics": [
     "security",
@@ -524,7 +604,12 @@
     "segment-caching",
     "ai-education-org",
     "platform-dependency",
-    "school-system-of-record"
+    "school-system-of-record",
+    "adoption-instrumentation",
+    "offline-first",
+    "multi-agent collaboration",
+    "discord",
+    "notion"
   ],
-  "derived_at": "2026-08-11T12:16:38.742Z"
+  "derived_at": "2026-08-18T18:30:03.223Z"
 }

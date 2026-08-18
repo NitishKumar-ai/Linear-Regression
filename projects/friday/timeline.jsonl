@@ -34,3 +34,8 @@
 {"skill":"office-hours","event":"completed","branch":"unknown","outcome":"DONE","duration_s":"2400","session":"22079-1780119210","ts":"2026-05-30T09:28:43.917Z"}
 {"skill":"autoplan","event":"completed","branch":"unknown","outcome":"DONE","duration_s":"3600","session":"unknown","ts":"2026-05-30T12:02:15.566Z"}
 {"skill":"ship","event":"started","branch":"unknown","session":"12223-1780142794","ts":"2026-05-30T12:06:34.807Z"}
+{"skill":"office-hours","event":"started","branch":"unknown","session":"50130-1786468609","ts":"2026-08-11T17:16:49.799Z"}
+{"skill":"autoplan","event":"started","branch":"unknown","session":"52321-1786469877","ts":"2026-08-11T17:37:57.520Z"}
+{"skill":"office-hours","event":"started","branch":"unknown","session":"68295-1786635273","ts":"2026-08-13T15:34:34.038Z"}
+{"skill":"autoplan","event":"started","branch":"unknown","session":"72937-1786638073","ts":"2026-08-13T16:21:13.455Z"}
+{"skill":"autoplan","event":"completed","branch":"unknown","outcome":"success","duration_s":"45","session":"12345-1786638091","ts":"2026-08-13T16:21:31.596Z"}
