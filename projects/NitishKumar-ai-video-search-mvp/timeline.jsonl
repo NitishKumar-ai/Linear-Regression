@@ -17,3 +17,11 @@
 {"skill":"design-html","event":"completed","branch":"feat/milestone-3","outcome":"success","duration_s":"0","session":"manual-20260726","ts":"2026-07-26T18:15:33.821Z"}
 {"skill":"investigate","event":"completed","branch":"feat/milestone-3","outcome":"error","ts":"2026-07-27T06:35:27.074Z"}
 {"skill":"ship","event":"completed","branch":"feat/milestone-3","outcome":"abort","duration_s":"0","session":"plan-gate-20260727","ts":"2026-07-27T06:57:28.421Z"}
+{"skill":"plan-eng-review","event":"completed","branch":"feature/phase4-testing-deployment","outcome":"unknown","source":"stop-hook","session":"34586-1784050515","ts":"2026-08-18T22:58:35.844Z"}
+{"skill":"autoplan","event":"completed","branch":"feature/phase4-testing-deployment","outcome":"unknown","source":"stop-hook","session":"36874-1784052833","ts":"2026-08-18T22:58:35.844Z"}
+{"skill":"ship","event":"completed","branch":"feature/phase4-testing-deployment","outcome":"unknown","source":"stop-hook","session":"38446-1784054121","ts":"2026-08-18T22:58:35.844Z"}
+{"skill":"ship","event":"completed","branch":"main","outcome":"unknown","source":"stop-hook","session":"23950-1784103342","ts":"2026-08-18T22:58:35.844Z"}
+{"skill":"ship","event":"completed","branch":"feat/milestone-3","outcome":"unknown","source":"stop-hook","session":"77300-1784400180","ts":"2026-08-18T22:58:35.844Z"}
+{"skill":"qa","event":"completed","branch":"feat/milestone-3","outcome":"unknown","source":"stop-hook","session":"84622-1784400347","ts":"2026-08-18T22:58:35.844Z"}
+{"skill":"review","event":"completed","branch":"feat/milestone-3","outcome":"unknown","source":"stop-hook","session":"31565-1784401467","ts":"2026-08-18T22:58:35.844Z"}
+{"skill":"ship","event":"completed","branch":"feat/milestone-3","outcome":"unknown","source":"stop-hook","session":"36716-1784401582","ts":"2026-08-18T22:58:35.844Z"}
