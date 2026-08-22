@@ -9,10 +9,10 @@
       "autonomy": 0.5,
       "architecture_care": 0.5
     },
-    "sample_size": 6,
+    "sample_size": 9,
     "diversity": {
       "skills_covered": 1,
-      "question_ids_covered": 6,
+      "question_ids_covered": 9,
       "days_span": 1
     }
   },
@@ -611,5 +611,5 @@
     "discord",
     "notion"
   ],
-  "derived_at": "2026-08-22T06:09:52.148Z"
+  "derived_at": "2026-08-22T09:55:41.060Z"
 }
