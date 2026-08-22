@@ -44,3 +44,5 @@
 {"skill":"autoplan","event":"completed","branch":"unknown","outcome":"unknown","source":"stop-hook","session":"52321-1786469877","ts":"2026-08-19T13:43:58.316Z"}
 {"skill":"office-hours","event":"completed","branch":"unknown","outcome":"unknown","source":"stop-hook","session":"68295-1786635273","ts":"2026-08-19T13:43:58.316Z"}
 {"skill":"autoplan","event":"completed","branch":"unknown","outcome":"unknown","source":"stop-hook","session":"72937-1786638073","ts":"2026-08-19T13:43:58.316Z"}
+{"skill":"qa","event":"started","branch":"unknown","session":"9675-1787406223","ts":"2026-08-22T13:43:43.554Z"}
+{"skill":"qa","event":"completed","branch":"unknown","outcome":"success","duration_s":"0","session":"unknown","ts":"2026-08-22T13:45:07.377Z"}

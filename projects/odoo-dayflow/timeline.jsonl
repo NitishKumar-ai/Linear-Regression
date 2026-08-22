@@ -15,3 +15,4 @@
 {"skill":"ship","event":"completed","branch":"vercel-deploy","outcome":"error","duration_s":0,"session":"ship-1787394056","ts":"2026-08-22T10:20:56.678Z"}
 {"skill":"land-and-deploy","event":"completed","branch":"codex/deployment-prep","outcome":"success","duration_s":0,"session":"manual-20260822","ts":"2026-08-22T10:29:39.679Z"}
 {"skill":"design-html","event":"completed","branch":"codex/deployment-prep","outcome":"success","duration_s":"0","session":"84208-1787397169","ts":"2026-08-22T11:12:49.235Z"}
+{"skill":"qa","event":"completed","branch":"codex/deployment-prep","outcome":"success","ts":"2026-08-22T12:17:42.753Z"}
