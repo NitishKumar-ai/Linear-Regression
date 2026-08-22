@@ -135,3 +135,7 @@
 {"skill":"qa","event":"completed","branch":"main","outcome":"unknown","source":"stop-hook","session":"31113-1786454329","ts":"2026-08-18T18:38:12.847Z"}
 {"skill":"ship","event":"completed","branch":"qa/quest-panel-blocks-register","outcome":"unknown","source":"stop-hook","session":"35881-1786458388","ts":"2026-08-18T18:38:12.847Z"}
 {"skill":"office-hours","event":"completed","branch":"main","outcome":"unknown","source":"stop-hook","session":"58974-1786626439","ts":"2026-08-18T18:38:12.847Z"}
+{"skill":"ship","event":"completed","branch":"fix/ws0-csp-and-metric-freeze","outcome":"success","session":"31466-1787163040","ts":"2026-08-19T18:28:34.873Z"}
+{"skill":"ship","event":"started","branch":"feat/metric-semantics-freeze","session":"41609-1787165247","ts":"2026-08-19T18:47:27.249Z"}
+{"skill":"ship","event":"completed","branch":"feat/metric-semantics-freeze","outcome":"success","ts":"2026-08-19T19:03:56.340Z"}
+{"skill":"ship","event":"completed","branch":"feat/metric-semantics-freeze","outcome":"unknown","source":"stop-hook","session":"41609-1787165247","ts":"2026-08-19T19:04:55.205Z"}
