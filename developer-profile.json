@@ -519,13 +519,34 @@
         "notion"
       ],
       "ts": "2026-08-13T21:00:34.195Z"
+    },
+    {
+      "date": "2026-08-22T14:40:00Z",
+      "mode": "builder",
+      "project_slug": "NSP",
+      "signal_count": 4,
+      "signals": [
+        "real_problem",
+        "other_people_need",
+        "taste",
+        "agency"
+      ],
+      "design_doc": "/Users/friday/.gstack/projects/NSP/friday-main-design-20260822-200642.md",
+      "assignment": "Write the two-minute shot list on paper: Priya five facts, six mock rows, the tap, bank-mismatch recovery. Do not scrape live NSP.",
+      "resources_shown": [],
+      "topics": [
+        "scholarship",
+        "NSP",
+        "hackathon"
+      ],
+      "ts": "2026-08-22T14:40:40.174Z"
     }
   ],
   "signals_accumulated": {
-    "real_problem": 11,
+    "real_problem": 12,
     "domain_expertise": 10,
-    "taste": 11,
-    "agency": 12,
+    "taste": 12,
+    "agency": 13,
     "conviction": 1,
     "solves_problem_others_need": 3,
     "other_people_need_it": 1,
@@ -533,7 +554,8 @@
     "named_users": 2,
     "need": 2,
     "pushback": 1,
-    "solves_others_problem": 1
+    "solves_others_problem": 1,
+    "other_people_need": 1
   },
   "schema_version": 1,
   "resources_shown": [
@@ -609,7 +631,9 @@
     "offline-first",
     "multi-agent collaboration",
     "discord",
-    "notion"
+    "notion",
+    "scholarship",
+    "NSP"
   ],
   "derived_at": "2026-08-22T12:04:47.769Z"
 }

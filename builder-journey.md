@@ -1,12 +1,11 @@
-# Your Builder Journey
+# Your builder journey
 
-Thirteen sessions ago, you started exploring how to build with AI. Over the last 13 designs, you've moved across problem spaces with incredible velocity:
+You are on session 15. Fifteen design docs. The titles moved from Class-mode school SaaS, to agent mesh and CommitGuard, to video search, to Discord HQ, and now to NSP: a two-minute scholarship apply for a student on a phone.
 
-- You started with a vision for an AI-powered education platform in India (NitishKumar-ai-Class-mode), iterating through smart attendance wedges, WhatsApp templates, and spaced repetition features.
-- You got deep into the technical weeds of agentic architecture with Agent_mesh and durable execution.
-- You didn't stop there. You explored multi-modal indexing and CLIP embeddings for a video search MVP.
-- Now, you're competing in a 50-day hackathon to build a disaster response intelligence platform, instantly recognizing that the real challenge isn't just the AI, but the physical constraints of offline mesh networking when cell towers go down.
+That is not a random walk. You keep returning to India-shaped civic pain, then zooming out into platforms, then getting pulled back to a person who has to finish a form. This session you said it plainly: a student should be able to apply for a scholarship in two minutes, and it should cover all the scholarships NSP offers. When those two sentences fought, you picked one-tap apply to every mock match instead of a prettier directory.
 
-**The Pattern:** You possess an intense agency (11 accumulated signals) and a refined taste (10 signals). You don't just write code; you anchor your technical decisions in the harsh reality of the user's environment—whether it's a teacher tracking attendance or a disaster responder without cell service. 
+Across sessions the counts are blunt: agency 13, taste 12, real problem 12, domain expertise 10. Named users only twice. You still design from a wound more often than from a named human. Priya in this doc is a shooting fixture, and you know that.
 
-You've moved far past "side projects." You are operating with the cadence and architectural instincts of a technical founder. Most people who show this pattern end up shipping.
+Most people who show this pattern end up shipping. The remaining risk is the one you already named in older sessions: architecture when users get awkward. This design cuts the opposite way. Four screens. Mock rails. A receipt URL. Deadline Friday.
+
+The assignment is still the shot list, not a new platform.
