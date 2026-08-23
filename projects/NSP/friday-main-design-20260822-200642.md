@@ -114,7 +114,7 @@ type ReceiptV1 = {
 
 `sessionStorage` key `nsp.session` holds `Session`. Missing session on `/matches` or `/confirm` redirects to `/`.
 
-Religion is "set" iff `religion != null && religion !== ''`. UDID is present iff `udid === 'present'`. GENERIC uses `religion: null`, `gender: null`, `udid: 'absent'`. Omit null keys when encoding.
+Religion is "set" iff `religion != null && religion !== ''`. UDID is present iff `udid === 'present'`. GENERIC uses `religion: null`, `gender: null`, `udid: 'absent'`. Encode keeps JSON `null`. Do not omit those keys.
 
 ### Screen 1 — `/` Who are you?
 
@@ -141,6 +141,8 @@ Shows all 11 catalog rows: matched first (`id` asc), unmatched after (`id` asc).
 
 **Apply to all matches** enabled iff `matchedCount >= 1`. Goes to `/confirm`. N for later submit = `matchedCount` (Priya: 6), including the row that will be `action_needed`.
 
+Copy on this screen: "Some schemes also use the mock locker (religion, UDID, single-girl). You did not type those. They are simulated."
+
 Zero matches (`fixtureId: 'zero'`): CTA disabled, copy "No mock schemes match these facts." **Change answers** is a link to `/` on every `/matches` screen (Priya, missing-doc, zero, manual).
 
 ### Screen 3 — `/confirm`
@@ -149,7 +151,7 @@ Visible locker rows only: income cert, category cert, marksheet, bank last-4, IF
 
 Each scheme has `requiredDocs: ('incomeCert' | 'categoryCert' | 'marksheet')[]`. Confirm ORs required docs of the **matched** set. Matcher does **not** use required docs. Missing matcher field → unmatched. Missing required doc → still matched, Submit disabled.
 
-Submit enabled only if every required doc in that OR-set is `present`. Missing-doc: name the gap (Priya missing-doc: "Previous marksheet (mock) missing"), Submit disabled, **Back to facts**.
+Submit enabled only if every required doc in that OR-set is `present`. Missing-doc: name the gap (Priya missing-doc: "Previous marksheet (mock) missing"), Submit disabled. Primary escape: **Use complete mock locker** (same facts, Priya locker with `marksheet: 'present'`). Then Submit enables. Secondary: **Back to facts**.
 
 **Submit N applications** → `POST /api/mock/submit` with JSON body `Session`. Success: `200 { token }`, client `router.push('/a/' + token)`. Failure: stay on `/confirm`, labeled "Mock submit failed. Retry." Retry POSTs the same `Session` with no `forceFail`.
 
@@ -173,7 +175,7 @@ Status subcopy:
 - `submitted`: `Institute verification pending · ~5–12 days (simulated)`
 - `action_needed`: `Mock bank name does not match PFMS · fix and resubmit this one`
 
-**Recovery (Priya s06 only):** inline field pre-filled `Priya S`. **Resubmit this one** enabled iff the field equals `pfmsBankName` (`Pria S`). On success: that row becomes `submitted` (institute subcopy), editor hides, canonical-encode, `router.replace` to the new `/a/{token}`. Old URLs stay pre-recovery. Do not POST `/api/mock/submit` again.
+**Recovery (Priya s06 only):** inline field pre-filled `Priya S`. **Resubmit this one** enabled iff the field equals `pfmsBankName` (`Pria S`). On success: set `locker.mockBankName` to that value, set s06 to `submitted` (institute subcopy), hide editor, canonical-encode, `router.replace`. Old URLs stay pre-recovery. Do not POST again. Copy should not pretend PFMS is the legal name source; it is a simulated mismatch.
 
 Copy status link: clipboard plus visible selectable URL.
 
@@ -185,9 +187,9 @@ Unknown / corrupt token: labeled mock 404, back to `/`.
 
 `token = base64url(utf8(JSON.stringify(canonical(receipt))))`.
 
-`canonical(value)`: drop `null`/`undefined`; arrays map recursively; objects recursively sort keys then drop nulls; `applications` sorted by `id` before encode. `receipt.ts` implements this. Idempotency depends on it.
+`canonical(value)`: recursively sort object keys. Keep `null`. Drop only `undefined`. `applications` sorted by `id`. Manual receipts include `"fixtureId": null`, `"religion": null`, `"gender": null`. Do not omit those keys.
 
-POST idempotency key = canonical `{facts, fixtureId, locker}` (recovery never goes through POST). Priya and a manual user with the same five facts differ because `fixtureId` and locker differ.
+POST encode is **deterministic**: same canonical session JSON → same token. That is not HTTP idempotency. There is no server store to dedupe.
 
 GET `/a/[token]` decodes or 404s. Payload is full `ReceiptV1` (~647 utf8 bytes / ~863 token chars for Priya first-submit). Under ~2k.
 
@@ -244,19 +246,20 @@ s03 is **community**, not minority, so a Hindu locker record is not a matcher jo
 ### Architecture
 
 ```
-src/app/layout.tsx            banner
-src/app/page.tsx              screen 1
-src/app/matches/page.tsx      screen 2
-src/app/confirm/page.tsx      screen 3
-src/app/a/[token]/page.tsx    screen 4
+src/app/layout.tsx                 banner, system-ui fonts, no webfont CDN
+src/app/page.tsx                   screen 1
+src/app/matches/page.tsx           screen 2
+src/app/confirm/page.tsx           screen 3
+src/app/a/[token]/page.tsx         screen 4; force-dynamic; decodeURIComponent
 src/app/api/mock/submit/route.ts   first-submit only; 200 { token } or 503 if forceFail
-src/components/               FactSelect, SchemeRow, StatusRow, LockerList, DemoButton
-src/lib/matching.ts           pure, unit-tested
-src/lib/receipt.ts            canonical encode/decode
-src/lib/mocks/schemes.json
-src/lib/mocks/fixtures.ts     priya, zero, missing-doc, GENERIC_LOCKER
-tests/                        priya journey+recovery, zero-match, missing-doc, submit 503, no .gov.in
+src/components/citizen.tsx         FactSelect, rows, DemoButton, sessionStorage, encodeURIComponent push
+src/lib/nsp.ts                     Node-pure: schemes, match, firstSubmit, canonical, encode/decode (Uint8Array base64url)
+tests/matching.test.ts
+tests/receipt.test.ts
+tests/priya.spec.ts                Playwright 390px hero
 ```
+
+Pin `next` >= 16.3.0. Receipt route: `export const dynamic = 'force-dynamic'`. Tokens are unsigned and labeled mock. `router.push('/a/' + encodeURIComponent(token))`.
 
 Cut: `inoClock`, chat, Hindi stub, auto-renew copy, admin INO UI, production promote pipeline.
 
@@ -288,11 +291,11 @@ Public web app on Vercel (or equivalent). No mobile app. No login on the hero pa
 
 ## Next Steps
 
-1. Scaffold Next.js + TypeScript per AGENTS.md. Banner in root layout first.
-2. Commit `schemes.json` + `matching.ts` + `receipt.ts` + fixtures. Tests for the Priya/zero tables before UI.
-3. Screens 1–4 in order. Resubmit via `router.replace` only.
-4. Tests: Priya journey, recovery, zero-match, missing-doc, mock 503, no `.gov.in`.
-5. Deploy public URL. 250-word summary. Two-minute shot list from the Priya table.
+1. Scaffold Next.js >= 16.3 + TypeScript. Banner + system fonts. Deploy a hello public URL the same day.
+2. `src/lib/nsp.ts` with schemes, match, firstSubmit, canonical (keep nulls), Uint8Array base64url. Unit tests including golden Priya token.
+3. Four screens in `citizen.tsx` + routes. Missing-doc **Use complete mock locker**. Matches locker disclaimer.
+4. Playwright Priya at 390px. Recovery updates `mockBankName`.
+5. 250-word summary. Two-minute shot list from the Priya table.
 6. Use Codex to implement matcher + screens so the contribution is the product.
 
 ## The Assignment
@@ -305,3 +308,105 @@ Write the two-minute shot list from the Priya table (five facts, six receipt row
 - You said "all the scholarship the NSP offers" and then picked apply to every match rather than a directory.
 - You picked the parents-could-finish 10x (Hindi, share-link, voice) and still agreed to cut it this week.
 - You pointed at [buildwhatmovesindia.com](https://buildwhatmovesindia.com/) twice before naming the wound. The repo was already called NSP. The two-minute student apply is what picked the problem.
+
+## Eng review decisions (2026-08-22)
+
+Locked in `/plan-eng-review`:
+
+- Four routes. UI in `citizen.tsx`. Domain in `nsp.ts` (Node-pure).
+- Receipt page `force-dynamic`. Pin Next >= 16.3.0. `encodeURIComponent` / `decodeURIComponent`.
+- Units + one Playwright Priya journey at 390px. System fonts only.
+- Canonical JSON keeps `null`. Unsigned tokens. Deterministic encode, not HTTP idempotency.
+- Missing-doc: **Use complete mock locker**. Matches: locker disclaimer.
+- Recovery writes `locker.mockBankName`.
+
+### What already exists
+
+Nothing in product code. Reuse only `rules.md` rails and this spec. Do not rebuild a government portal.
+
+### NOT in scope
+
+- Hindi, voice, WhatsApp parent product (10x)
+- HMAC / signed receipts (theater with a git secret)
+- Live NSP, UIDAI, PFMS, DigiLocker
+- INO admin UI
+- Extra screen-1 fields for religion/UDID/single-girl
+- Webfont CDN
+- KV / database for receipts
+- Cutting s03/s08/s09 this week (label instead)
+
+### Data flow
+
+```
+[Screen1 facts] --sessionStorage Session--> [Screen2 match(nsp)]
+       |                                         |
+       +-- demo fixtures (priya|zero|missing-doc)+
+                                                 v
+[Screen3 locker / complete-locker] --POST Session--> firstSubmit
+                                                 v
+                              token = base64url(canonical(ReceiptV1))
+                                                 v
+                    GET /a/{encodeURIComponent(token)}  [force-dynamic]
+                                                 v
+                         resubmit: rewrite locker+status, replace URL
+```
+
+### Failure modes
+
+| Path | Failure | User sees | Test |
+|---|---|---|---|
+| POST submit | 503 forceFail | Retry on confirm | unit route |
+| POST submit | network | Retry | Playwright optional skip |
+| GET token | corrupt/forged | mock 404 | unit decode |
+| Recover s06 | wrong name | button disabled | unit + Playwright |
+| Missing marksheet | submit disabled | complete-locker CTA | unit + confirm UI |
+| Zero match | apply disabled | Change answers | unit |
+| Clipboard | iOS deny | selectable URL | manual |
+
+### Worktree parallelization
+
+Sequential implementation, no parallelization opportunity. `nsp.ts` is on every path.
+
+## Implementation Tasks
+
+Synthesized from this review. Run with Codex; checkbox as you ship.
+
+- [ ] **T1 (P1, human: ~3h / CC: ~25min)** — Scaffold Next >= 16.3, layout banner, system fonts, force-dynamic receipt route
+  - Surfaced by: Architecture — LRU/cache + fonts
+  - Files: `src/app/**`, `package.json`
+  - Verify: `npm run build`; receipt route not static
+- [ ] **T2 (P1, human: ~2h / CC: ~20min)** — `nsp.ts` match/firstSubmit/canonical(keep nulls)/base64url + unit tests + no `.gov.in`
+  - Surfaced by: Code quality — Node-pure domain
+  - Files: `src/lib/nsp.ts`, `tests/matching.test.ts`, `tests/receipt.test.ts`
+  - Verify: golden Priya token; zero fixture matches 0
+- [ ] **T3 (P1, human: ~3h / CC: ~25min)** — Four screens + demo controls + complete-locker + locker disclaimer
+  - Surfaced by: Scope B + Codex missing-doc/hidden locker
+  - Files: `src/components/citizen.tsx`, app pages
+  - Verify: Playwright `tests/priya.spec.ts` at 390px
+- [ ] **T4 (P2, human: ~1h / CC: ~10min)** — Recovery updates `mockBankName`; unsigned token copy in minute two
+  - Surfaced by: Codex #8, D10
+  - Files: receipt page, summary/video script
+  - Verify: recovered token decodes with matching names
+- [ ] **T5 (P2, human: ~1h / CC: ~10min)** — Deploy public URL the same day as scaffold
+  - Surfaced by: Codex #14
+  - Files: Vercel project
+  - Verify: signed-out browser opens `/` without auth
+
+_No new tasks from Performance beyond T1 fonts._
+
+## GSTACK REVIEW REPORT
+
+| Review | Trigger | Why | Runs | Status | Findings |
+|--------|---------|-----|------|--------|----------|
+| CEO Review | `/plan-ceo-review` | Scope & strategy | 0 | SKIPPED | hackathon wedge already locked in office-hours |
+| Codex Review | `/codex review` | Independent 2nd opinion | 1 | ABSORBED | 14 misses; user took nulls, missing-doc exit, locker label, unsigned tokens |
+| Eng Review | `/plan-eng-review` | Architecture & tests (required) | 1 | CLEAR | 4-route collapse; Next>=16.3 force-dynamic; encode token; pure nsp.ts; Playwright Priya; system fonts |
+| Design Review | `/plan-design-review` | UI/UX gaps | 0 | SKIPPED | pixel sketch never rendered |
+| DX Review | `/plan-devex-review` | Developer experience gaps | 0 | SKIPPED | empty repo, standard Next scaffold |
+
+- **CODEX:** unsigned URL-store, hidden locker, missing-doc wall, canonical-vs-nulls, padded duplicate schemes, 11-row scroll, deploy-late
+- **CROSS-MODEL:** agreed URL-as-store is a mock; disagreed on HMAC (user: unsigned) and five-fact purity (user: label hidden locker)
+- **VERDICT:** ENG CLEARED — ready to implement
+
+NO UNRESOLVED DECISIONS
+

@@ -1,0 +1,1 @@
+{"skill":"plan-eng-review","timestamp":"2026-08-22T15:20:57Z","status":"CLEAR","runs":1,"findings":"4-route collapse; Next>=16.3 force-dynamic; encode token; pure nsp.ts; Playwright Priya; system fonts; unsigned receipts","commit_full":"HEAD","tree":"HEAD^{tree}","dirty":false}
