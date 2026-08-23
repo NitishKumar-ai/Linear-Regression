@@ -140,3 +140,4 @@
 {"skill":"ship","event":"completed","branch":"feat/metric-semantics-freeze","outcome":"success","ts":"2026-08-19T19:03:56.340Z"}
 {"skill":"ship","event":"completed","branch":"feat/metric-semantics-freeze","outcome":"unknown","source":"stop-hook","session":"41609-1787165247","ts":"2026-08-19T19:04:55.205Z"}
 {"skill":"qa","event":"started","branch":"fix/auth-google-signin-gate","session":"13494-1787477653","ts":"2026-08-23T09:34:13.852Z"}
+{"skill":"qa","event":"completed","branch":"fix/auth-google-signin-gate","outcome":"success","duration_s":"769","session":"13494-1787477653","ts":"2026-08-23T09:47:02.469Z"}
