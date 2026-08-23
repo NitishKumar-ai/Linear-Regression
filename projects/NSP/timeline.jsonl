@@ -1,3 +1,6 @@
 {"skill":"browse","event":"completed","branch":"main","outcome":"success","duration_s":"0","session":"rules-md-20260822","ts":"2026-08-22T14:03:20.647Z"}
 {"skill":"office-hours","event":"completed","branch":"main","outcome":"success","duration_s":"2690","session":"17718-1787408527","ts":"2026-08-22T15:06:57.533Z"}
 {"skill":"plan-eng-review","event":"completed","branch":"main","outcome":"success","duration_s":"0","ts":"2026-08-22T15:20:57.771Z"}
+{"skill":"ship","event":"completed","branch":"docs/frontend-research","outcome":"success","duration_s":"1200","session":"10280-1787495910","ts":"2026-08-23T14:51:26.279Z"}
+{"skill":"ship","event":"started","branch":"feat/p0-reviewer-path","session":"16469-1787497589","ts":"2026-08-23T15:06:29.349Z"}
+{"skill":"ship","event":"completed","branch":"feat/p0-reviewer-path","outcome":"success","duration_s":"1900","session":"16469-1787497589","ts":"2026-08-23T15:32:35.695Z"}

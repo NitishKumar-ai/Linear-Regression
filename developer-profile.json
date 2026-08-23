@@ -9,10 +9,10 @@
       "autonomy": 0.5,
       "architecture_care": 0.5
     },
-    "sample_size": 3,
+    "sample_size": 6,
     "diversity": {
       "skills_covered": 1,
-      "question_ids_covered": 3,
+      "question_ids_covered": 6,
       "days_span": 1
     }
   },
@@ -635,5 +635,5 @@
     "scholarship",
     "NSP"
   ],
-  "derived_at": "2026-08-23T14:47:43.498Z"
+  "derived_at": "2026-08-23T15:50:32.127Z"
 }
