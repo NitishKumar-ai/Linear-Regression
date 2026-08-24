@@ -7,3 +7,6 @@
 {"skill":"ship","event":"completed","branch":"release-prep","outcome":"success","ts":"2026-07-10T12:35:30.682Z"}
 {"skill":"ship","event":"started","branch":"release-prep","session":"74920-1783706699","ts":"2026-07-10T18:04:59.598Z"}
 {"skill":"ship","event":"completed","branch":"release-prep","outcome":"unknown","duration_s":"0","session":"74920-1783706699","ts":"2026-07-10T18:18:42.671Z"}
+{"skill":"office-hours","event":"completed","branch":"main","outcome":"unknown","source":"stop-hook","session":"28188-1783382364","ts":"2026-08-24T09:55:37.217Z"}
+{"skill":"browse","event":"completed","branch":"main","outcome":"unknown","source":"stop-hook","session":"26703-1783670270","ts":"2026-08-24T09:55:37.217Z"}
+{"skill":"browse","event":"completed","branch":"release-prep","outcome":"success","session":"14629-1787565532","ts":"2026-08-24T09:58:52.461Z"}
