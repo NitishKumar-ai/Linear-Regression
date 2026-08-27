@@ -1,3 +1,0 @@
-{"skill":"plan-eng-review","timestamp":"2026-06-27T13:28:43Z","status":"clean","unresolved":0,"critical_gaps":0,"issues_found":3,"mode":"Startup","commit":"6f6e3e7"}
-{"skill":"plan-design-review","timestamp":"2026-06-27T13:32:59Z","status":"clean","initial_score":2,"overall_score":9,"unresolved":0,"decisions_made":5,"commit":"6f6e3e7"}
-{"skill":"review","timestamp":"2026-06-29T20:19:42Z","status":"clean","issues_found":0,"critical":0,"informational":1,"quality_score":9.5,"findings":[{"fingerprint":"server/lib/ai/gateway.ts:84:dead-comment","severity":"INFORMATIONAL","action":"auto-fixed"}],"commit":"c1510b5"}

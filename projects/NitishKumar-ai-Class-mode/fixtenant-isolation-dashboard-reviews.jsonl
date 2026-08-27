@@ -1,2 +1,0 @@
-{"skill":"review","timestamp":"2026-06-30T19:50:14Z","status":"clean","issues_found":0,"critical":0,"informational":0,"quality_score":10.0,"specialists":{"security":{"dispatched":true,"findings":0,"critical":0,"informational":0},"testing":{"dispatched":true,"findings":0,"critical":0,"informational":0}},"findings":[],"commit":"41211db","via":"ship"}
-{"skill":"adversarial-review","timestamp":"2026-06-30T19:51:04Z","status":"clean","source":"claude","tier":"always","gate":"skipped","commit":"41211db"}

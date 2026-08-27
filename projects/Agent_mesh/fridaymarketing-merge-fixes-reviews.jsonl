@@ -1,8 +1,0 @@
-{"skill":"plan-ceo-review","timestamp":"2026-06-19T21:02:23Z","status":"clean","unresolved":0,"critical_gaps":0,"mode":"SELECTIVE_EXPANSION","via":"autoplan","commit":"c3d1f12"}
-{"skill":"plan-eng-review","timestamp":"2026-06-19T21:02:23Z","status":"clean","unresolved":0,"critical_gaps":0,"issues_found":0,"mode":"FULL_REVIEW","via":"autoplan","commit":"c3d1f12"}
-{"skill":"plan-design-review","timestamp":"2026-06-19T21:02:23Z","status":"clean","unresolved":0,"via":"autoplan","commit":"c3d1f12"}
-{"skill":"plan-devex-review","timestamp":"2026-06-19T21:02:23Z","status":"clean","initial_score":9,"overall_score":9,"product_type":"engine-api","tthw_current":"2s","tthw_target":"5m","unresolved":0,"via":"autoplan","commit":"c3d1f12"}
-{"skill":"autoplan-voices","timestamp":"2026-06-19T21:02:23Z","status":"clean","source":"subagent-only","phase":"ceo","via":"autoplan","consensus_confirmed":6,"consensus_disagree":0,"commit":"c3d1f12"}
-{"skill":"autoplan-voices","timestamp":"2026-06-19T21:02:23Z","status":"clean","source":"subagent-only","phase":"eng","via":"autoplan","consensus_confirmed":6,"consensus_disagree":0,"commit":"c3d1f12"}
-{"skill":"autoplan-voices","timestamp":"2026-06-19T21:02:23Z","status":"clean","source":"subagent-only","phase":"design","via":"autoplan","consensus_confirmed":7,"consensus_disagree":0,"commit":"c3d1f12"}
-{"skill":"autoplan-voices","timestamp":"2026-06-19T21:02:23Z","status":"clean","source":"subagent-only","phase":"dx","via":"autoplan","consensus_confirmed":6,"consensus_disagree":0,"commit":"c3d1f12"}

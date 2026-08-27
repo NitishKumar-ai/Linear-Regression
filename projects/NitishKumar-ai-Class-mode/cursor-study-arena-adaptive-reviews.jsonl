@@ -1,3 +1,0 @@
-{"skill":"ship","timestamp":"2026-08-06T18:49:41Z","coverage_pct":76,"plan_items_total":0,"plan_items_done":0,"verification_result":"skipped","version":"1.9.2.0","branch":"cursor/study-arena-adaptive"}
-{"skill":"ship","timestamp":"2026-08-11T12:36:04Z","coverage_pct":63,"plan_items_total":1,"plan_items_done":1,"verification_result":"pass","version":"1.9.2.0","branch":"cursor/study-arena-adaptive"}
-{"skill":"land-and-deploy","timestamp":"2026-08-11T13:00:47Z","status":"SUCCESS","pr":394,"merge_sha":"8dc30dac4f24db5f5ac5c76ac77805ff22662f01","merge_path":"direct","first_run":false,"deploy_status":"HEALTHY","staging_status":"SKIPPED","review_status":"STALE","ci_wait_s":840,"queue_s":0,"deploy_s":343,"staging_s":0,"canary_s":10,"total_s":1309}

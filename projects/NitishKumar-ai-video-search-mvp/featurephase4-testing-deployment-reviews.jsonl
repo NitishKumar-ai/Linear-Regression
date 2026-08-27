@@ -1,4 +1,0 @@
-{"skill":"review","timestamp":"2026-07-14T17:31:31Z","status":"clean","issues_found":0,"critical":0,"informational":0,"quality_score":10.0,"commit":"17dcc23","via":"ship"}
-{"skill":"plan-ceo-review","timestamp":"2026-07-14T18:19:38Z","status":"clean","unresolved":0,"critical_gaps":0,"mode":"SELECTIVE_EXPANSION","via":"autoplan","commit":"1de0f2a"}
-{"skill":"plan-eng-review","timestamp":"2026-07-14T18:19:38Z","status":"clean","unresolved":0,"critical_gaps":0,"issues_found":10,"mode":"FULL_REVIEW","via":"autoplan","commit":"1de0f2a"}
-{"skill":"plan-design-review","timestamp":"2026-07-14T18:19:38Z","status":"clean","unresolved":0,"via":"autoplan","commit":"1de0f2a"}
